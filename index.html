@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Google Maps location for Astra Dental Centre in Langley, BC.">
 
-  <title>Astra Dental Centre | Google Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Astra Dental Centre Langley BC | Dentist & Directions</title>
+
+  <meta
+    name="description"
+    content="Find Astra Dental Centre at 20061 Fraser Hwy #120, Langley, BC V3A 0R4. Call 604-533-8806, get directions, or visit our Langley dental clinic website."
+  >
+
+  <meta
+    name="robots"
+    content="index, follow"
+  >
+
+  <!-- Main Astra Dental Centre website -->
+  <link
+    rel="canonical"
+    href="https://astradentalcentre.com/"
+  >
+
+  <!-- Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Astra Dental Centre",
+    "url": "https://astradentalcentre.com/",
+    "telephone": "+1-604-533-8806",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "20061 Fraser Hwy #120",
+      "addressLocality": "Langley",
+      "addressRegion": "BC",
+      "postalCode": "V3A 0R4",
+      "addressCountry": "CA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 49.108293883086596,
+      "longitude": -122.66931532292544
+    },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Astra+Dental+Centre+20061+Fraser+Hwy+Langley+BC",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "10:00",
+        "closes": "19:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Friday",
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ]
+  }
+  </script>
 
   <style>
     * {
@@ -15,13 +86,65 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
+      line-height: 1.6;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    .business-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    .contact-info {
+      margin: 20px 0;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #333;
+    }
+
+    .button:hover {
+      opacity: 0.85;
     }
 
     .map-container {
       width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
+      overflow: hidden;
+      border-radius: 10px;
     }
 
     .map-container iframe {
@@ -30,22 +153,116 @@
       height: 450px;
       border: 0;
     }
+
+    address {
+      font-style: normal;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+    }
   </style>
 </head>
 
 <body>
 
-  <main class="map-container" aria-label="Astra Dental Centre location map">
+  <main class="container">
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.493329364997!2d-122.66931532292544!3d49.108293883086596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485cfd5f42d6087%3A0xaec8e87c10582f27!2sAstra%20Dental%20Centre!5e1!3m2!1sen!2sca!4v1788997431679!5m2!1sen!2sca"
-      width="600"
-      height="450"
-      style="border:0;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin">
-    </iframe>
+    <section class="business-card">
+
+      <h1>Astra Dental Centre – Dentist in Langley, BC</h1>
+
+      <p>
+        Astra Dental Centre provides dental care for individuals and
+        families in Langley, British Columbia. Find our clinic location,
+        contact information and Google Maps directions below.
+      </p>
+
+      <div class="contact-info">
+
+        <address>
+          <strong>Astra Dental Centre</strong><br>
+          20061 Fraser Hwy #120<br>
+          Langley, BC V3A 0R4<br>
+          Canada
+        </address>
+
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:+16045338806">
+            604-533-8806
+          </a>
+        </p>
+
+        <p>
+          <strong>Website:</strong>
+          <a
+            href="https://astradentalcentre.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            astradentalcentre.com
+          </a>
+        </p>
+
+      </div>
+
+      <div class="buttons">
+
+        <a
+          class="button"
+          href="tel:+16045338806"
+        >
+          Call Astra Dental Centre
+        </a>
+
+        <a
+          class="button"
+          href="https://www.google.com/maps/search/?api=1&query=Astra+Dental+Centre+20061+Fraser+Hwy+Langley+BC"
+          target="_blank"
+          rel="noopener"
+        >
+          Get Directions
+        </a>
+
+        <a
+          class="button"
+          href="https://astradentalcentre.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Visit Our Website
+        </a>
+
+      </div>
+
+      <h2>Astra Dental Centre Location</h2>
+
+      <div
+        class="map-container"
+        aria-label="Google Map showing Astra Dental Centre in Langley BC"
+      >
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.493329364997!2d-122.66931532292544!3d49.108293883086596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485cfd5f42d6087%3A0xaec8e87c10582f27!2sAstra%20Dental%20Centre!5e1!3m2!1sen!2sca!4v1788997431679!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <p>
+        © Astra Dental Centre · Langley, British Columbia
+      </p>
+    </footer>
 
   </main>
 
